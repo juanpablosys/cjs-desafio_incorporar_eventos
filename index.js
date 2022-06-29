@@ -53,3 +53,6 @@ while (seleccionLista != 2) {
 }
 alert("Gracias por visitarnos");
 
+let titulo_principal = document.getElementById("titulo_principal");
+titulo_principal.innerText = "Buenas "+ nombreCliente;
+
