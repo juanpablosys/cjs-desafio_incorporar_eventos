@@ -16,6 +16,8 @@ cursadas.push(new Cursada("2","RitmosLatinos", "1500"));
 const curso1 = cursadas.filter(item => item.id === 1);
 const curso2 = cursadas.filter(item => item.id === 2);
 
+let botonInicial;
+let titulo_principal;
 let nombreCliente;
 let seleccionLista;
 let costoCursoEntrenamientoFuncional = 2000;
@@ -53,6 +55,13 @@ while (seleccionLista != 2) {
 }
 alert("Gracias por visitarnos");
 
-let titulo_principal = document.getElementById("titulo_principal");
+titulo_principal = document.getElementById("titulo_principal");
 titulo_principal.innerText = "Buenas "+ nombreCliente;
+
+botonInicial = document.getElementById("boton-inicial");
+botonInicial.addEventListener("click", function() {
+  alert("Usted a finalizado el proceso");
+});
+
+
 
